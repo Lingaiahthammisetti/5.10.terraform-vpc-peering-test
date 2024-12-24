@@ -6,10 +6,10 @@ terraform {
     }
   }
 backend "s3" {
-  bucket ="tf-aws-vpc-remote-state"
+  bucket ="aws-vpc-peering-test-remote-state"
   key="aws-vpc-key"
   region="us-east-1"
-  dynamodb_table="tf-aws-vpc-remote-state-locking"
+  dynamodb_table="aws-vpc-peering-test-locking"
   }
 }
 
